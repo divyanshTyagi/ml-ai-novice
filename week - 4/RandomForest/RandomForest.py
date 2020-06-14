@@ -64,7 +64,7 @@ ct = ColumnTransformer(
 X = ct.fit_transform(X)
 
 #to avoid the dummy variable trap
-X = X[:,[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15]] #---> encoding the date gave a worse mse
+X = X[:,[0,1,2,3,4,5,6,7,8,9,10,12,13,14,15]]
 
 from sklearn.preprocessing import StandardScaler
 
